@@ -1,0 +1,35 @@
+# Core ASGI stack
+fastapi==0.115.4
+starlette==0.41.2
+uvicorn[standard]==0.30.6
+
+# Concurrencia / IO
+anyio==4.6.2.post1
+watchfiles==0.21.0
+
+# HTTP stack (coherente con fastapi 0.115.*)
+h11==0.14.0
+httpcore==0.17.3
+httpx==0.24.1
+
+# Modelado / settings / forms
+pydantic==2.12.3
+pydantic-settings==2.4.0
+python-multipart==0.0.9
+python-dotenv==1.0.1
+
+# Auth / hashing
+python-jose==3.3.0
+passlib[bcrypt]==1.7.4
+
+# DB / migrations
+SQLAlchemy[asyncio]==2.0.35
+asyncpg==0.29.0
+alembic==1.13.2
+
+# Redis rate limit (si lo usas)
+redis==5.0.7
+fastapi-limiter==0.1.6
+email-validator==2.1.0.post1
+static-ffmpeg==2.0.0
+local-ffmpeg==0.1.4
