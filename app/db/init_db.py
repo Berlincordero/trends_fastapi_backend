@@ -1,3 +1,4 @@
+# app/db/init_db.py
 import logging
 from app.db.session import engine
 from app.db.base import Base
@@ -7,7 +8,7 @@ from app.users.models import User
 from app.profile.models import Profile
 from app.feed.models import Post, PostStar
 from app.comments.models import Comment
-from app.clips.models import Clip  # 👈 NUEVO
+from app.clips.models import Clip, ClipView, ClipStar  # 👈 IMPORTANTE
 
 log = logging.getLogger("uvicorn")
 
